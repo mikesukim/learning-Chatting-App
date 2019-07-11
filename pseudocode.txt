@@ -1,0 +1,21 @@
+**** Warning ****
+This project has not finished completely.
+It works until server connecting several clients through fork(), and
+Client can read/write at the same time using multithreading.
+
+
+
+1. Simple Logic Flow
+
+	1) server 
+		get ready for socket connection.
+		fork to accept several connections.
+		infinite while loop to deal with logic.
+
+
+	2) client
+		get ready for socket connection.
+ 		after the connection, two threads are made for reading/writing 
+		can happen at the same time.
+
+
